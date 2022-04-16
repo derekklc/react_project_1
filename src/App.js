@@ -1,9 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import HH from "./H1";
 
 function App() {
   return (
     <div className="App">
+      <HH></HH>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,5 +24,11 @@ function App() {
     </div>
   );
 }
+
+// class App extends React.Component {
+//   render() {
+//     return <HH></HH>;
+//   }
+// }
 
 export default App;
