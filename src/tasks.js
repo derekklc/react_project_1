@@ -13,7 +13,7 @@ export default function ({ tasks, handler4 }) {
       <div>TASKS</div>
       {tasks &&
         tasks.map((r) => (
-          <div onClick={handler4} id={r.id} key={r.id}>
+          <div className="task_row" onClick={handler4} id={r.id} key={r.id}>
             <FaTimes></FaTimes>
             {r.label}
           </div>

@@ -30,12 +30,14 @@ function App() {
   // });
   function handler4(e) {
     // console.log(e.target);
-    setTasks(tasks.filter((r) => r.id != e.target.id));
+    setTasks(tasks.filter((r) => r.id !== e.target.id));
   }
   return (
-    <div className="App">
-      <HH Tasks={tasks} setTasks={setTasks} label="LABEL1" tt="abcde"></HH>
-      <TT handler4={handler4} tasks={tasks}></TT>
+    <div className="app_main">
+      <div className="app_main_inner">
+        <HH Tasks={tasks} setTasks={setTasks}></HH>
+        <TT handler4={handler4} tasks={tasks}></TT>
+      </div>
     </div>
   );
 }

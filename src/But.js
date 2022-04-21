@@ -1,10 +1,6 @@
 const BB = (p) => {
   return (
-    <button
-      onClick={p.onClick}
-      style={{ color: p.color, fontSize: "20px" }}
-      className="btn1"
-    >
+    <button onClick={p.onClick} className="btn1 red_button">
       {p.label}
     </button>
   );

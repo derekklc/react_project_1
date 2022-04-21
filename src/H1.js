@@ -19,18 +19,19 @@ export default function HH({ Tasks, setTasks, label, tt }) {
     };
     setTasks([new_obj, ...Tasks]);
   };
-  const handler3 = () => {
-    console.log("Clicked 3");
-  };
   return (
     <>
-      <div style={someStyle}>{label} H1 Welcomes you</div>
-      <div onClick={handler3}>{tt}</div>
-      <button onClick={handler2} className="btn1">
-        Add
-      </button>
-      <BB onClick={handler1} color="green" label="BUTTON1 Label"></BB>
-      <Form1></Form1>
+      <div className="tasks_row_container" id="tasks_row_1_container">
+        <div className="tasks_title">Task Tracker</div>
+      </div>
+      <Form1
+        children={
+          <button onClick={handler2} className="btn1 green_button">
+            Add
+          </button>
+        }
+      ></Form1>
+      <BB onClick={handler1} label="Remove Completed"></BB>
     </>
   );
 }
@@ -42,9 +43,4 @@ HH.defaultProps = {
 HH.propTypes = {
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
-};
-
-const someStyle = {
-  backgroundColor: "black",
-  color: "white",
 };

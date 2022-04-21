@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+:root {
+  color: #393a4b;
 }
 
 .App-logo {
@@ -37,17 +37,20 @@
   }
 }
 
-.btn1 {
-  color: red;
-}
-
 .div1 {
   padding: 20px 10px;
   border-radius: 5px;
-  background: lightgrey;
+  background: #f1f1f1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 12px;
+}
+
+.div1_span {
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
 }
 
 .div2 {
@@ -55,3 +58,64 @@
   white-space: nowrap;
   display: flex;
 }
+
+.app_main {
+  display: flex;
+  justify-content: center;
+}
+
+.app_main_inner {
+  border: 1px solid grey;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.tasks_title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tasks_row_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn1 {
+  border: none;
+  border-radius: 3px;
+  padding: 0.3rem 0.5rem;
+  font-size: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.green_button {
+  background: green;
+  color: white;
+  width: 55%;
+}
+
+.red_button {
+  background: rgb(195, 67, 89);
+  color: white;
+}
+
+.table_cell_div_1 {
+  display: flex;
+  align-items: center;
+}
+
+/* -- Tasks List Section -- */
+.task_row {
+  display: flex;
+  align-items: center;
+  background: #d7f4ff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 2px;
+}
+
+/* -- End of Tasks List Section -- */
